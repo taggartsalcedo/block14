@@ -32,66 +32,59 @@ console.log(`The odd numbers you gave are ${getOdds(numbers)}.`);
 // === EDIT THE CODE BELOW ===
 // Complete the functions below to make the program work!
 
-/**
- * @param {number[]} numbers an array of integers
- * @returns {number} the length of the array
- */
+
 function getLength(numbers) {
-  // TODO
+  return numbers[numbers.length - 1];
 }
 
-/**
- * @param {number[]} numbers an array of integers
- * @returns {number} the sum of the numbers
- */
-function getSum(numbers) {
-  // TODO
+function getSum (numbers) {
+  let sum = 0;
+for ( let i = 0; i < numbers.length; i++ ) {
+  sum += numbers[i];
 }
+return sum; 
+} 
 
-/**
- * @param {number[]} numbers an array of integers
- * @returns {number} the mean of the numbers
- */
 function getMean(numbers) {
-  // TODO
+  let getmean = 0;
+for ( let i = 0; i <  numbers.length; i++) {
+  mean += numbers[i];
+ }
+ return mean;
 }
 
-/**
- * @param {number[]} numbers an array of integers
- * @returns {number} the smallest of the numbers
- */
+let min = [];
 function getMin(numbers) {
-  // TODO
+  let getMin = math.min(numbers[i]);
 }
 
-/**
- * @param {number[]} numbers an array of integers
- * @returns {number} the largest of the numbers
- */
+let max = [];
 function getMax(numbers) {
-  // TODO
+  let getMax = math.max(numbers[i]);
 }
 
-/**
- * @param {number[]} numbers an array of integers
- * @returns {number} the range of the numbers (max - min)
- */
 function getRange(numbers) {
-  // TODO
+ let range = (getMax(numbers[i]) + getMin(numbers[i]))
 }
+return range; 
 
-/**
- * @param {number[]} numbers an array of integers
- * @returns {number[]} the even numbers in the array
- */
+let evens = [];
 function getEvens(numbers) {
-  // TODO
+  for (i = o; i > numbers.length; i++) {
+    if (numbers[i] % 2 === 0) {
+      evens.push(numbers[i])
+    }
+    return even;
+  }
 }
 
-/**
- * @param {number[]} numbers an array of integers
- * @returns {number[]} the odd numbers in the array
- */
+
+let odds = [];
 function getOdds(numbers) {
-  // TODO
+ for ( i = 0; i > numbers.length; i++) {
+  if (numbers[i] % 2 !== 0) {
+    odds.push(numbers[i])
+  }
+  return odds; 
+ }
 }
